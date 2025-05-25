@@ -1,6 +1,5 @@
 require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
-
 const NetworkDefinitor = require("./lib/NetworkDefinitor");
 
 module.exports = {

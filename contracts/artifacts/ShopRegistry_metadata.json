@@ -1,0 +1,221 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "shopId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					}
+				],
+				"name": "ShopRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_shopId",
+						"type": "string"
+					}
+				],
+				"name": "getSellerAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_shopId",
+						"type": "string"
+					}
+				],
+				"name": "isShopRegistered",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_shopId",
+						"type": "string"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_seller",
+						"type": "address"
+					}
+				],
+				"name": "registerShop",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "shopToSeller",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Manages shop and seller registrations",
+			"kind": "dev",
+			"methods": {
+				"getSellerAddress(string)": {
+					"details": "Returns the seller address for a shop",
+					"params": {
+						"_shopId": "ID of the Shopify store"
+					}
+				},
+				"isShopRegistered(string)": {
+					"details": "Checks if a shop is registered",
+					"params": {
+						"_shopId": "ID of the Shopify store"
+					}
+				},
+				"registerShop(string,address)": {
+					"details": "Registers a Shopify store with a seller's address",
+					"params": {
+						"_seller": "Ethereum address of the seller",
+						"_shopId": "ID of the Shopify store"
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership to a new address",
+					"params": {
+						"newOwner": "Address of the new owner"
+					}
+				}
+			},
+			"title": "ShopRegistry",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ShopRegistry.sol": "ShopRegistry"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ownable.sol": {
+			"keccak256": "0xe18fa49e1db3036e602f6f44b9bc8b02f2a1764a625a993f86d551b078ea51fc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2b1436dc778f196a5756831e2ab26c3930c222da74920a857cd4fa63da454b9f",
+				"dweb:/ipfs/QmZBVoMC5TSSeAbMc8VeeoTJsVmJyLXUVQoVtnPKkgBc6m"
+			]
+		},
+		"contracts/ShopRegistry.sol": {
+			"keccak256": "0xaf0aec45b8793affbf3b6b1a9c7c7c90b63a4f32137554d16da4360f89c81916",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2e6bbe84ec37085f4b7d162d57531b2f3d6d73a1e05e2b62fa92054d06ae7455",
+				"dweb:/ipfs/QmdSY7DNfr8QxzYaNgX7VeDim87H68UMqREoqDzEpUzADa"
+			]
+		}
+	},
+	"version": 1
+}
