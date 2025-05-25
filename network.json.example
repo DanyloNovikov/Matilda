@@ -1,0 +1,82 @@
+{
+  "networks": {
+    "sepolia": {
+      "url": "${SEPOLIA_URL}",
+      "accounts": [
+        "${SEPOLIA_PRIVATE_KEY}"
+      ]
+    },
+    "mainnet": {
+      "url": "${MAINNET_RPC_URL}",
+      "accounts": [
+        "${PRIVATE_KEY}"
+      ],
+      "chainId": 1
+    },
+    "arbitrum_sepolia": {
+      "url": "${ARBITRUM_SEPOLIA_RPC_URL}",
+      "accounts": [
+        "${ARBITRUM_SEPOLIA_PRIVATE_KEY}"
+      ]
+    },
+    "arbitrum": {
+      "url": "${ARBITRUM_RPC_URL}",
+      "accounts": [
+        "${ARBITRUM_PRIVATE_KEY}"
+      ],
+      "chainId": 42161
+    },
+    "optimism_sepolia": {
+      "url": "${OPTIMISM_SEPOLIA_RPC_URL}",
+      "accounts": [
+        "${OPTIMISM_SEPOLIA_PRIVATE_KEY}"
+      ]
+    },
+    "optimism": {
+      "url": "${OPTIMISM_RPC_URL}",
+      "accounts": [
+        "${OPTIMISM_PRIVATE_KEY}"
+      ],
+      "chainId": 10
+    },
+    "starknet_sepolia": {
+      "url": "${STARKNET_SEPOLIA_RPC_URL}",
+      "accounts": [
+        "${STARKNET_SEPOLIA_PRIVATE_KEY}"
+      ]
+    },
+    "starknet": {
+      "url": "${STARKNET_RPC_URL}",
+      "accounts": [
+        "${STARKNET_PRIVATE_KEY}"
+      ],
+      "chainId": 1
+    },
+    "zksync_sepolia": {
+      "url": "${ZKSYNC_SEPOLIA_RPC_URL}",
+      "accounts": [
+        "${ZKSYNC_SEPOLIA_PRIVATE_KEY}"
+      ]
+    },
+    "zksync": {
+      "url": "${ZKSYNC_RPC_URL}",
+      "accounts": [
+        "${ZKSYNC_PRIVATE_KEY}"
+      ],
+      "chainId": 324
+    },
+    "polygon_amoy": {
+      "url": "${POLYGON_AMOY_RPC_URL}",
+      "accounts": [
+        "${POLYGON_AMOY_PRIVATE_KEY}"
+      ]
+    },
+    "polygon": {
+      "url": "${POLYGON_RPC_URL}",
+      "accounts": [
+        "${POLYGON_PRIVATE_KEY}"
+      ],
+      "chainId": 137
+    }
+  }
+}

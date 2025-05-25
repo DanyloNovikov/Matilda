@@ -1,6 +1,10 @@
+require("dotenv").config();
 require("@nomicfoundation/hardhat-toolbox");
 
-/** @type import('hardhat/config').HardhatUserConfig */
+const NetworkDefinitor = require("./lib/NetworkDefinitor");
+
 module.exports = {
-  solidity: "0.8.28",
+  solidity: process.env.SOLIDITY_VERSION || "0.8.28",
+  networks: new NetworkDefinitor().allNetworks(),
+  etherscan: { apiKey: process.env.ETHERSCAN_API_KEY }
 };
